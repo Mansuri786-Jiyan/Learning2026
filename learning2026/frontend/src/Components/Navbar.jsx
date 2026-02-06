@@ -34,6 +34,14 @@ export const Navbar = () => {
                Functionaldamo1
               </Link>
 
+               <Link className="dropdown-item" style={{textAlign:"center"}} to="/useStateDemp1">
+               Usesatatedemo1
+              </Link>
+
+               <Link className="dropdown-item" style={{textAlign:"center"}} to="/useStateDemp2">
+               Usesatatedemo2
+              </Link>
+
 
 
               {/* <Link className="dropdown-item" to="/map1">

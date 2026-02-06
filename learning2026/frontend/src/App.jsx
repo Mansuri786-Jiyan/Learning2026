@@ -18,6 +18,8 @@ import { Navbar } from "./Components/Navbar.jsx"
 import {CricketTeam} from "./Components/CricketTeam.jsx"
 import SingleTeam from "./Components/SingleTeam.jsx"
 import FunctionalDemo1 from "./Components/FunctionalDemo1.jsx"
+import Usestatedemo2 from "./Components/Usestatedemo2.jsx"
+import UseStateDemo1 from "./Components/useStateDemo1.jsx"
 
 function App() {
 
@@ -47,6 +49,8 @@ function App() {
         <Route path="/CricketTeam" element={<CricketTeam/>}></Route>
         <Route path="/SingleTeam/:teamName" element={<SingleTeam/>}></Route>
         <Route path="/functionaldamo1" element={<FunctionalDemo1/>}></Route>
+        <Route path="/useStateDemp1" element={<UseStateDemo1/>}></Route>
+        <Route path="/useStateDemp2" element={<Usestatedemo2/>}></Route>
       </Routes>
 
 

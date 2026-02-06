@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react";
 import "../App.css"
 
-function useStateDemo1() {
+function UseStateDemo1() {
      const[count,Setcount]  = useState(0);
     
         const increament = () =>{
@@ -16,4 +16,4 @@ function useStateDemo1() {
   )
 }
 
-export default useStateDemo1
+export default UseStateDemo1
