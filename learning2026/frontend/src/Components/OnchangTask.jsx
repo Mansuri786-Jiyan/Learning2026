@@ -4,7 +4,7 @@ function OnchangTask() {
 
   const [formData, setFormData] = useState({
     name: "",
-    age: "",
+    age: 0,
     email: "",
     password: "",
     phone: "",

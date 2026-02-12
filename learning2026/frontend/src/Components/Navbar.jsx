@@ -64,7 +64,11 @@ export const Navbar = () => {
                 OnChange
               </Link>
 
-               <Link className="dropdown-item" to="/Inputdemo1">
+               <Link className="dropdown-item" to="/EmployeeData">
+                EmployeeData
+              </Link>
+
+               {/* <Link className="dropdown-item" to="/Inputdemo1">
                 Inputdemo1
               </Link>
 
@@ -74,7 +78,7 @@ export const Navbar = () => {
 
               <Link className="dropdown-item" to="/Inputdemo3">
                 Inputdemo3
-              </Link>
+              </Link> */}
 
 
         </ul>
