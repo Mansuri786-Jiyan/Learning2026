@@ -26,6 +26,7 @@ import InputDemo2 from "./Components/input/inputDemo2.jsx"
 import InputDemo3 from "./Components/input/FeedbackForm.jsx"
 import EmployeeData from "./Components/props/PropsDemo1/EmployeeData.jsx"
 import Formdemo1 from "./Components/foms/Formdemo1.jsx"
+import Formdemo2 from "./Components/foms/Formdemo2.jsx"
 
 
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/Inputdemo2" element={<InputDemo2/>}></Route>
           <Route path="/Inputdemo3" element={<InputDemo3/>}></Route> */}
           <Route path="/EmployeeData" element={<EmployeeData/>}></Route> 
+          <Route path="/formdemo2" element={<Formdemo2/>}></Route> 
         
 
 

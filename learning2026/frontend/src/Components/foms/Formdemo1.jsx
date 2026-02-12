@@ -63,7 +63,7 @@ function Formdemo1() {
         phonvalidator:{
             required:{
                 value: true,
-                message: "Email is Required*"
+                message: "ph-number is Required*"
         },
            pattern: {
                 value: /^[0-9]{10}$/,

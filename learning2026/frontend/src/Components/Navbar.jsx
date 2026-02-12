@@ -72,6 +72,10 @@ export const Navbar = () => {
                 FormDemo1
               </Link>
 
+               <Link className="dropdown-item" to="/formdemo2">
+                FormDemo2
+              </Link>
+
                {/* <Link className="dropdown-item" to="/Inputdemo1">
                 Inputdemo1
               </Link>
