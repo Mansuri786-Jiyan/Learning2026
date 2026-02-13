@@ -27,6 +27,7 @@ import InputDemo3 from "./Components/input/FeedbackForm.jsx"
 import EmployeeData from "./Components/props/PropsDemo1/EmployeeData.jsx"
 import Formdemo1 from "./Components/foms/Formdemo1.jsx"
 import Formdemo2 from "./Components/foms/Formdemo2.jsx"
+import FormDemo3 from "./Components/foms/FormDemo3.jsx"
 
 
 
@@ -37,16 +38,16 @@ function App() {
 
     <>
     <Navbar></Navbar>
-      {/* <HeaderComponent></HeaderComponent> */}
+      <HeaderComponent></HeaderComponent>
       {/* <ContentComponentt></ContentComponentt> */}
-      {/* <Map1></Map1> */}
-      {/* <Map2></Map2> */}
-      {/* <Map3></Map3> */}
-      {/* <Map4></Map4> */}
-      {/* <Map5></Map5> */}
-      {/* <Map6></Map6> */}
-      {/* <Map7></Map7> */}
-      {/* <Map8></Map8> */}
+      {/* <Map1></Map1>
+      <Map2></Map2>
+      <Map3></Map3>
+      <Map4></Map4>
+      <Map5></Map5>
+      <Map6></Map6>
+      <Map7></Map7>
+      <Map8></Map8> */}
       <Routes>
         <Route path="/NetflixHome" element={<Netflixhome/>}></Route>
         <Route path="/" element={<Home/>}/>
@@ -62,11 +63,12 @@ function App() {
         <Route path="/useStateDemp2" element={<Usestatedemo2/>}></Route>
         <Route path="/OnchangTask" element={<OnchangTask/>}></Route>
         <Route path="/formdemo1" element={<Formdemo1/>}></Route>
-          {/* <Route path="/Inputdemo1" element={<Inputdemo1/>}></Route>
+          <Route path="/Inputdemo1" element={<Inputdemo1/>}></Route>
           <Route path="/Inputdemo2" element={<InputDemo2/>}></Route>
-          <Route path="/Inputdemo3" element={<InputDemo3/>}></Route> */}
+          <Route path="/Inputdemo3" element={<InputDemo3/>}></Route>
           <Route path="/EmployeeData" element={<EmployeeData/>}></Route> 
           <Route path="/formdemo2" element={<Formdemo2/>}></Route> 
+          <Route path="/formdemo3" element={<FormDemo3/>}></Route> 
         
 
 

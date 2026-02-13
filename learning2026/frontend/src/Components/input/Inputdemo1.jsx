@@ -19,7 +19,8 @@ function Inputdemo1() {
          <div style={{textAlign:"center"}}>
         <h2>Student Form</h2>
         <label>Name:</label>
-        <input type="text"  placeholder='Enter Your Name' {...register("Name")} /><br/>
+        <input type="text"  placeholder='Enter Your Name' {...register("Name")} />
+        <br/>
         <label>Age:</label>
         <input type="number" placeholder='Enter Age' {...register("Age")} /><br/>
         <label>Email:</label>

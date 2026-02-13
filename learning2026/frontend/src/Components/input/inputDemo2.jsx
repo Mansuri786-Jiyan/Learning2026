@@ -22,9 +22,8 @@ function InputDemo2() {
   return (
     <div className="job-container">
       <form className="job-form" onSubmit={handleSubmit(onSubmit)}>
-        <h2>Job Application Form</h2>
+        <h2 >Job Application Form</h2>
 
-        {/* Full Name */}
         <label>Full Name</label>
         <input
           type="text"
@@ -32,7 +31,6 @@ function InputDemo2() {
         />
         <p className="error">{errors.fullName?.message}</p>
 
-        {/* Phone */}
         <label>Phone Number</label>
         <input
           type="tel"
@@ -43,7 +41,6 @@ function InputDemo2() {
         />
         <p className="error">{errors.phone?.message}</p>
 
-        {/* Position */}
         <label>Position Applied</label>
         <input
           type="text"
@@ -51,7 +48,6 @@ function InputDemo2() {
         />
         <p className="error">{errors.position?.message}</p>
 
-        {/* Skills */}
         <label>Skills</label>
         <div className="checkbox-group">
           <label>
@@ -70,7 +66,6 @@ function InputDemo2() {
           </label>
         </div>
 
-        {/* Experience */}
         <label>Experience</label>
         <select {...register("experience")}>
           <option value="Fresher">Fresher</option>
@@ -78,7 +73,6 @@ function InputDemo2() {
           <option value="3+ Years">3+ Years</option>
         </select>
 
-        {/* Resume */}
         <label>Resume Link</label>
         <input
           type="url"
@@ -87,7 +81,6 @@ function InputDemo2() {
         />
         <p className="error">{errors.resume?.message}</p>
 
-        {/* Cover Letter */}
         <label>Cover Letter</label>
         <textarea
           rows="4"
@@ -98,7 +91,6 @@ function InputDemo2() {
         <button type="submit">Apply Now</button>
       </form>
 
-      {/* Result Card */}
       {formData && (
         <div className="result-card">
           <h3>Application Submitted</h3>

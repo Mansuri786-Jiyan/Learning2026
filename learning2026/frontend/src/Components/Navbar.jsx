@@ -25,7 +25,7 @@ export const Navbar = () => {
           <li className="nav-item">
             <Link className="nav-link" to="/Netflixhome">Netflixhome</Link>
           </li>
-{/* 
+
           <Link className="dropdown-item" to="/CricketTeam">
                 Cricket Teams
               </Link>
@@ -40,11 +40,11 @@ export const Navbar = () => {
 
                <Link className="dropdown-item" style={{textAlign:"center"}} to="/useStateDemp2">
                Usesatatedemo2
-              </Link> */}
+              </Link>
 
 
 
-              {/* <Link className="dropdown-item" to="/map1">
+              <Link className="dropdown-item" to="/map1">
                 Cars
               </Link>
 
@@ -58,7 +58,7 @@ export const Navbar = () => {
 
                <Link className="dropdown-item" to="/map4">
                 City
-              </Link> */}
+              </Link>
 
                <Link className="dropdown-item" to="/OnchangTask">
                 OnChange
@@ -76,7 +76,7 @@ export const Navbar = () => {
                 FormDemo2
               </Link>
 
-               {/* <Link className="dropdown-item" to="/Inputdemo1">
+               <Link className="dropdown-item" to="/Inputdemo1">
                 Inputdemo1
               </Link>
 
@@ -86,8 +86,11 @@ export const Navbar = () => {
 
               <Link className="dropdown-item" to="/Inputdemo3">
                 Inputdemo3
-              </Link> */}
+              </Link>
 
+               <Link className="dropdown-item" to="/formdemo3">
+                formdemo3
+              </Link>
 
         </ul>
       </div>
