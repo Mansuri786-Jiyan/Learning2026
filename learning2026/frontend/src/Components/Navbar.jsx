@@ -96,6 +96,10 @@ export const Navbar = () => {
                 APIDEMO1
               </Link>
 
+              <Link className="dropdown-item" to="/apidemo2">
+                APIDEMO2
+              </Link>
+
         </ul>
       </div>
     </nav>
