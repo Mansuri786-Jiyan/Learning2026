@@ -10,21 +10,24 @@
 
 // const express = require("express");
 // const { router } = require("./src/router/employeeRout");
-
 // const app = express();
-
 // const users = [
 //   { id: 1, name: "Mansuri" },
 //   { id: 2, name: "Barsena" },
 //   { id: 3, name: "Ansari" },
 // ];
-
 // const Employees = [
 //   { id: 1, name: "Mansuri",sallary:30000 },
 //   { id: 2, name: "Barsena",sallary:40000 },
 //   { id: 3, name: "Ansari",sallary:20000 },
 // ];
 
+// app.get("/employees", (req, res) => {
+//   res.json({
+//     message:"Successfull fetch",
+//     data:Employees
+//   })
+// });
 // app.get("/test", (req, res) => {
 //   res.send("Server is Running");
 // });
@@ -36,12 +39,6 @@
 //   })
 // });
 
-// app.get("/employees", (req, res) => {
-//   res.json({
-//     message:"Successfull fetch",
-//     data:Employees
-//   })
-// });
 
 // app.get("/employees/:id", (req, res) => {
 //   const responde = Employees.find(e => e.id === parseInt(req.params.id));
@@ -75,6 +72,19 @@ dbConnection();
 // Routes
 const productRoutes = require("./src/router/ProductRouter");
 app.use("/api", productRoutes);
+
+const bookRoutes = require("./src/router/BooksRouter");
+if (bookRoutes) {
+  app.use("/books", bookRoutes);
+}
+
+const stateRoutes = require("./src/router/stateRoutes");
+const cityRoutes = require("./src/router/cityRoutes");
+const categoryRoutes = require("./src/router/categoryRoutes");
+
+app.use("/api/states", stateRoutes);
+app.use("/api/cities", cityRoutes);
+app.use("/api/categories", categoryRoutes);
 
 app.listen(10000, () => {
   console.log("Server start on 10000");

@@ -3,8 +3,10 @@ const Products = require("../model/ProductModel");
 const getAllproduct = async (req, res) => {
   try {
     const products = await Products.find();
-
-    res.json(products);
+    res.json({
+      succuses:true,
+      data:products,
+    });
   } catch (error) {
     res.status(500).json({
       message: "Error fetching products",
@@ -64,8 +66,22 @@ const DeleteByid = async(req,res) => {
   });
 }
 
+const updateByid = async(req,res) =>{
+  try {
+    const update = await Products.findByIdAndUpdate(req.params.id,req.body)
+    res.json({
+      message:"Data updated Succussfully",
+      data:update
+    })    
+  } catch (error) {
+    res.json({
+      message:error
+    })
+  }
+}
 
 
 
 
-module.exports = { getAllproduct,getProductbyId,addProduct,createProduct }
+
+module.exports = { getAllproduct,getProductbyId,addProduct,createProduct,updateByid }
